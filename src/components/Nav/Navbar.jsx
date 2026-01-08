@@ -1,5 +1,6 @@
 import { Navbar } from "react-bootstrap";
-import { MdOutlineLightMode } from "react-icons/md";
+import moon from "../../assets/moon.png";
+import sun from "../../assets/sun.png";
 import css from "./Navbar.module.css";
 import { useContext } from "react";
 import { ThemeChangeContext } from "../../store/themeChangeStore.jsx";
@@ -51,7 +52,11 @@ const AppNavbar = () => {
           toggleThemeHandler();
         }}
       >
-        <MdOutlineLightMode />
+        {theme === "light" ? (
+          <img src={moon} alt="switch to dark mode" />
+        ) : (
+          <img src={sun} alt="switch to light mode" />
+        )}
       </button>
     </Navbar>
   );

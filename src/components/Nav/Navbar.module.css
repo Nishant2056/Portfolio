@@ -14,13 +14,18 @@
 }
 
 .customBtn{
-  background-color: #808080;
-  color: yellowgreen;
-  border-radius: 36px;  
+  background-color: rgb(229, 231, 235, 0.5);
+  border-radius: 18px;  
   padding: 8px 16px;
   border: none;
   cursor: pointer;
-  font-size: 12px;
+  font-weight: 500;
+  border:1px solid gray;
+}
+.customBtn img{
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 
 
