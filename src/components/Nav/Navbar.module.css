@@ -1,0 +1,31 @@
+.customNavbar{
+   color: white;
+    width: 40%;
+    border-radius: 28px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(31, 41, 55, 0.9);
+    position: fixed;
+    top: 22px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+.customBtn{
+  background-color: #808080;
+  color: yellowgreen;
+  border-radius: 36px;  
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+
+.customNavbar a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}

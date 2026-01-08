@@ -1,0 +1,17 @@
+.aboutSection{
+  margin-top: 90px;
+}
+.aboutSection h2{
+  font-size: 54px;
+  font-weight: 700;
+  position: relative;
+}
+.aboutSection h2::after{
+  content: "";
+  position: absolute;
+  width: 18%;
+  height: 2px;
+  top: 50%;
+  left: 10%;
+  
+}

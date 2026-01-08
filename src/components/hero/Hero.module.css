@@ -1,0 +1,10 @@
+.heroHeading{
+  padding-top: 300px ;
+  width: 50% ;
+  margin-bottom: 50px;
+}
+
+.heroHeading h1{
+  font-size: 64px ;
+  font-weight: 700;
+}
