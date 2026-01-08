@@ -1,0 +1,20 @@
+.descOne{
+  padding: 12px 16px;
+  background-color: #1f293780 !important;
+  border-radius: 12px;
+  min-height: 100%;
+}
+
+.descOne img{
+  object-fit: contain;
+  width: 40px;
+  height: 40px;
+}
+
+.descOne h3{
+  font-weight: 900;
+  font-size: 38px;
+}
+.descOne p{
+  font-weight: 600;
+}
