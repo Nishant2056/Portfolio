@@ -4,7 +4,6 @@ import sun from "../../assets/sun.png";
 import css from "./Navbar.module.css";
 import { useContext } from "react";
 import { ThemeChangeContext } from "../../store/themeChangeStore.jsx";
-import { ImGift } from "react-icons/im";
 
 const AppNavbar = () => {
   const { theme, toggleThemeHandler } = useContext(ThemeChangeContext);
