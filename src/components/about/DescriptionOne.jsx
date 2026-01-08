@@ -7,6 +7,9 @@ const DescriptionOne = () => {
     <div
       className={`${css.descOne} container-fluid $`}
       style={{ background: { code } }}
+      data-aos="fade-down"
+      data-aos-easing="ease-in-out"
+      data-aos-duration="500"
     >
       <h3 className="d-flex gap-2 align-items-center">
         <img src={hello} alt="hello-img" /> Hello, I'm Nishant Bhurtel

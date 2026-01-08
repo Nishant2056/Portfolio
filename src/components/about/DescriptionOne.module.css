@@ -2,7 +2,7 @@
   padding: 12px 16px;
   background-color: #1f293780 !important;
   border-radius: 12px;
-  min-height: 100%;
+  height: auto;
 }
 
 .descOne img{

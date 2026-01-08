@@ -20,7 +20,12 @@ const DescriptionConnect = () => {
   };
 
   return (
-    <div className="container-fluid">
+    <div
+      className="container-fluid"
+      data-aos="fade-down"
+      data-aos-easing="ease-in-out"
+      data-aos-duration="600"
+    >
       <h4 className="text-start fw-bold d-flex align-items-center gap-2">
         <VscDebugDisconnect />
         Let's Connect
