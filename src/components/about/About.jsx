@@ -2,6 +2,7 @@ import css from "./About.module.css";
 import DescriptionConnect from "./DescriptionConnect";
 import DescriptionOne from "./DescriptionOne";
 import Achievement from "./Achievement";
+import SmartSolutions from "./SmartSolutions";
 
 const About = () => {
   return (
@@ -30,6 +31,13 @@ const About = () => {
               <Achievement />
             </div>
           </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="row">
+          <SmartSolutions />
+          <SmartSolutions />
+          <SmartSolutions />
         </div>
       </div>
     </section>
