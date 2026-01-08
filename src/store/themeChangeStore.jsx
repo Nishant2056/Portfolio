@@ -4,7 +4,7 @@ import { useReducer } from "react";
 export const ThemeChangeContext = createContext();
 
 const initialTheme = {
-  theme: "light",
+  theme: "dark",
 };
 
 const themeReducer = (state, action) => {
