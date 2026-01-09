@@ -11,4 +11,9 @@
 .workplace .first{
   border: 1px solid gray !important;
   border-radius: 12px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.first:hover{
+  transform: scale(1.02);
 }
