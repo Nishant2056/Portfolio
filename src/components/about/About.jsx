@@ -1,9 +1,20 @@
 import css from "./About.module.css";
-import DescriptionConnect from "./DescriptionConnect";
 import DescriptionOne from "./DescriptionOne";
-import Achievement from "./Achievement";
+import InfoList from "./InfoList";
 import SmartSolutions from "./SmartSolutions";
 import SmartSolutionsLogo from "../../assets/Smart-solutions-logo.png";
+import ZcraLogo from "../../assets/zcralogo.png";
+import { IoIosMailUnread } from "react-icons/io";
+import Hire from "./Hire";
+import {
+  FaGlobe,
+  FaMapMarkerAlt,
+  FaFolderOpen,
+  FaLaptopCode,
+  FaAward,
+} from "react-icons/fa";
+import { VscDebugDisconnect } from "react-icons/vsc";
+import { GrAchievement } from "react-icons/gr";
 
 const About = () => {
   const smartSolutionsData = [
@@ -22,8 +33,34 @@ const About = () => {
       date: "May 2025 - Present",
       description:
         "Developing modern, scalable front-end solutions with a focus on performance, usability, and seamless collaboration across teams.",
-      logo: SmartSolutionsLogo,
+      logo: ZcraLogo,
       bgColor: "rgb(23,153,148,0.3) ",
+    },
+  ];
+
+  const infoListsData = [
+    {
+      title: "Let's Connect",
+      icon: <VscDebugDisconnect />,
+      items: [
+        { name: "bhurtelnishant@gmail.com", icon: <IoIosMailUnread /> },
+        { name: "nishantbhurtel.com.np", icon: <FaGlobe /> },
+        { name: "Kathmandu, Nepal", icon: <FaMapMarkerAlt /> },
+      ],
+      duration: "600",
+    },
+    {
+      title: "Achievements",
+      icon: <GrAchievement />,
+      items: [
+        { name: "Involved in Multiple Projects", icon: <FaFolderOpen /> },
+        { name: "Expert in modern web development", icon: <FaLaptopCode /> },
+        {
+          name: "Delivered multiple projects professionally",
+          icon: <FaAward />,
+        },
+      ],
+      duration: "800",
     },
   ];
 
@@ -46,12 +83,11 @@ const About = () => {
             <DescriptionOne />
           </div>
           <div className="col-md-6 d-flex flex-column gap-2 p-4">
-            <div className={`${css.connection}`}>
-              <DescriptionConnect />
-            </div>
-            <div className={`${css.connection}`}>
-              <Achievement />
-            </div>
+            {infoListsData.map((info, index) => (
+              <div key={index} className={`${css.connection}`}>
+                <InfoList data={info} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
@@ -60,6 +96,7 @@ const About = () => {
           {smartSolutionsData.map((data, index) => (
             <SmartSolutions key={index} data={data} />
           ))}
+          <Hire />
         </div>
       </div>
     </section>

@@ -1,0 +1,10 @@
+.hireMe{
+  border: 1px solid gray;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, rgba(0,84,163,0.3), rgba(23,153,148,0.3));
+  min-height: 266px;
+
+}
+.hireMe ul{
+  width: 100%;
+}
