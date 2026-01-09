@@ -8,6 +8,7 @@ import { ThemeChangeContext } from "./store/themeChangeStore.jsx";
 import ParticleBackground from "./components/ParticleBackground.jsx";
 import Hero from "./components/hero/Hero.jsx";
 import About from "./components/about/About.jsx";
+import Technology from "./components/technology/Technology.jsx";
 
 function App() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Technology></Technology>
     </div>
   );
 }
