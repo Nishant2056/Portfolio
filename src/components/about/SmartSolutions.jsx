@@ -1,22 +1,24 @@
-import SmartSolutionsLogo from "../../assets/Smart-solutions-logo.png";
 import css from "./SmartSolutions.module.css";
 
-const SmartSolutions = () => {
+const SmartSolutions = ({ data }) => {
+  const style = {
+    backgroundColor: data.bgColor,
+  };
+
   return (
     <div className={`${css.workplace} container-fluid col-md-4`}>
-      <div className={`${css.first} d-flex gap-4 align-items-start p-4`}>
+      <div
+        className={`${css.first} d-flex gap-4 align-items-start p-4`}
+        style={style}
+      >
         <div className="company-logo">
-          <img src={SmartSolutionsLogo} alt="Company Logo" />
+          <img src={data.logo} alt="Company Logo" />
         </div>
         <div className="company-description">
-          <h4 className="text-start mb-1 fw-bold">Web Develoepr</h4>
-          <p className="text-start mb-1 fw-bold">Smart Solutions Technology</p>
-          <p className="text-start mb-2 fw-bold">Dec 2024 - Present</p>
-          <p className="text-start mb-1">
-            As a developer, collaborating with clients and teams to build
-            high-performance systems that solve complex challenges across
-            industries.
-          </p>
+          <h4 className="text-start mb-1 fw-bold">{data.role}</h4>
+          <p className="text-start mb-1 fw-bold">{data.company}</p>
+          <p className="text-start mb-2 fw-bold">{data.date}</p>
+          <p className="text-start mb-1">{data.description}</p>
         </div>
       </div>
     </div>
