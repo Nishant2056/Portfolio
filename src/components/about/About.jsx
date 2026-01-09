@@ -3,8 +3,30 @@ import DescriptionConnect from "./DescriptionConnect";
 import DescriptionOne from "./DescriptionOne";
 import Achievement from "./Achievement";
 import SmartSolutions from "./SmartSolutions";
+import SmartSolutionsLogo from "../../assets/Smart-solutions-logo.png";
 
 const About = () => {
+  const smartSolutionsData = [
+    {
+      role: "Web Developer",
+      company: "Smart Solutions Technology",
+      date: "Dec 2024 - Present",
+      description:
+        "As a developer, collaborating with clients and teams to build high-performance systems that solve complex challenges across industries.",
+      logo: SmartSolutionsLogo,
+      bgColor: "rgb(0,84,163,0.3) ",
+    },
+    {
+      role: "Front-End Developer",
+      company: "Zurich Climate Resilience Alliance",
+      date: "May 2025 - Present",
+      description:
+        "Developing modern, scalable front-end solutions with a focus on performance, usability, and seamless collaboration across teams.",
+      logo: SmartSolutionsLogo,
+      bgColor: "rgb(23,153,148,0.3) ",
+    },
+  ];
+
   return (
     <section
       className={`${css.aboutSection} container text-center d-flex justify-content-center align-items-center flex-column gap-4`}
@@ -35,9 +57,9 @@ const About = () => {
       </div>
       <div className="container">
         <div className="row">
-          <SmartSolutions />
-          <SmartSolutions />
-          <SmartSolutions />
+          {smartSolutionsData.map((data, index) => (
+            <SmartSolutions key={index} data={data} />
+          ))}
         </div>
       </div>
     </section>
