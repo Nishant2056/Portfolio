@@ -1,0 +1,9 @@
+.technologySection{
+  margin-top: 70px;
+}
+.technologySection h2{
+    font-size: 54px;
+    font-weight: 700;
+    border-bottom: 4px solid;
+    padding: 14px 0;
+}
