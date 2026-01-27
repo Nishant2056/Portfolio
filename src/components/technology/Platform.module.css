@@ -1,0 +1,33 @@
+.technologyCard {
+  background: linear-gradient(135deg, 
+  rgba(251,146,60,0.3) 0%, 
+  rgba(236,72,153,0.3) 50%, 
+  rgba(168,85,247,0.3) 100%
+);
+  transition: all 0.3s ease-in-out;
+  
+
+}
+.technologyCard:hover{
+  transform: scale(1.025);
+  box-shadow: 0 0 60px rgba(251, 146, 60, 0.5),
+    0 0 60px rgba(236, 72, 153, 0.5),
+    0 0 60px rgba(168, 85, 247, 0.5);
+}
+
+
+.technologyCard img {
+  height: 50px;
+  object-fit: contain;
+  transition: all 0.5s ease-in-out;
+ 
+  width: 40%;
+  border-radius: 12px;
+  margin: 0 auto;
+  padding: 7px;
+  
+}
+
+.technologyCard:hover img{
+  transform: rotate(10deg);
+}
